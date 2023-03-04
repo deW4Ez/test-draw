@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+            "width=device-width, initial-scale=1.0">
+      
+    <title>
+        Draw with the mouse in a HTML5 canvas
+    </title>
+      
+    <style> 
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+        }
+        .can{
+            min-width: 500;
+            min-height: 500;
+            border: 5px solid gray;            
+        }
+        .buttons{
+            display: inline;
+            margin-top: 20px;
+        }
+        
+        
+    </style>
+</head>
+  
+<body> 
+    <div class="container" >
+        <div class="can" id="container">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="buttons">
+            <!-- <button class="button" id="buttonPress">Нажми</button> -->
+            <button class="button" id="buttonClear" onclick="clearCanvas()">Очистить</button>
+        </div>        
+    </div>   
+    
+    <script src="index.js"></script>
+</body>
+  
+</html>
